@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css"
+    />
+    <title>CreateAccount</title>
+  </head>
+  <body class="bg">
+    <div class="container">
+      <form action="/action_page.php" target="_blank" method="post">
+        <h1 class="heading" style="color: antiquewhite">Lets Create Account</h1>
+        <div class="form-group">
+          <div class="first">
+            <label>First Name*</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="first name"
+              id="UserName"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Last Name*</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="last name"
+              id="LastName"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Mobile N0*</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Mobile no"
+              id="MoNo"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Email*</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="email"
+              id="Email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Genres">Generes</label>
+
+            <select name="Generes" id="Generes" multiple>
+              <option value="1">jazz</option>
+              <option value="2">classic</option>
+              <option value="3">rock</option>
+              <option value="4">pop</option>
+              <option value="5">trace</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Performance Type*</label>
+            <input type="checkbox" placeholder="" />
+            <input type="checkbox" placeholder="" />
+          </div>
+          <button><input type=" button" value="submit" class="btn" /></button>
+        </div>
+      </form>
+      <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+      <script>
+        new MultiSelectTag("Generes");
+      </script>
+    </div>
+  </body>
+</html>
